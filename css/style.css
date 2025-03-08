@@ -587,6 +587,31 @@ footer ul li i:hover {
     height: 50px;
     animation: vibrate 0.2s infinite alternate;
   }
+
+  .our-team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.our-team h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.our-team p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* ------------------------------
   responsive
 ---------------------------------*/
