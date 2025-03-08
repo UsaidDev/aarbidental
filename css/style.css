@@ -156,14 +156,12 @@ span.span-title-left {
     text-align: center;
 }
 
-.navbar .navbar-brand {
-    text-align: left;
-    width: 25%;
+.navbar-brand {
+    text-decoration: none !important;
+    color: #fff !important;
 }
-
-.navbar .navbar-brand img {
-    height: 40px;
-    width: auto;
+.navbar-brand:hover {
+    text-decoration: none !important;
 }
 
 .navbar .navbar-toggler {
@@ -200,9 +198,6 @@ span.span-title-left {
     font-weight: 400;
 }
 
-.navbar .navbar-nav li a:hover {
-    color: #eee;
-}
 
 .navbar .button-navbar {
     width: 25%;
