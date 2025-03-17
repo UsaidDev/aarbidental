@@ -432,9 +432,22 @@ h1 {
 
 
 .about .content-left img {
-    width: 100%;
+    width: 100%; /* Make sure it adapts to the container */
+    max-width: 400px; /* Prevents excessive stretching on large screens */
     border-radius: 10px;
+    display: block;
+    height: auto; /* Maintains aspect ratio */
+    margin: auto; /* Centers the image */
 }
+
+/* Make image fully responsive on small screens */
+@media (max-width: 768px) {  
+    .about .content-left img {
+        max-width: 100%; /* Allow the image to take full width on small screens */
+    }
+}
+
+
 
 .about .content-left .open {
     background: #fff;
