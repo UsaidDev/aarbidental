@@ -346,11 +346,25 @@ h1 {
     border-radius: 10px;
 }
 .uniform-img {
-    width: 400px;  /* Set uniform width */
-    height: 400px; /* Set uniform height */
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    width: 100%; /* Ensures image scales with the container */
+    max-width: 400px; /* Limits the image size on larger screens */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Keeps aspect ratio while filling container */
     border-radius: 10px; /* Optional: Rounded corners */
-    display: block; /* Prevent unwanted spacing */
+    display: block; /* Prevents extra spacing issues */
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 576px) {  
+    .uniform-img {
+        max-width: 300px; /* Reduce image size for small devices */
+    }
+}
+
+@media (max-width: 400px) {  
+    .uniform-img {
+        max-width: 100%; /* Full width for very small screens */
+    }
 }
 
 /* Ensure no unwanted margins or padding */
@@ -415,18 +429,10 @@ h1 {
     padding-top: 130px;
 }
 
-.about .content-left {
-    background: url(../img/Clinic/Aarbi_clinic-6.jpg) center no-repeat;
-    background-size: cover;
-    text-align: right;
-    border-radius: 10px;
-}
+
 
 .about .content-left img {
-    margin-top: 220px;
-    width: 250px;
-    margin-right: -50px;
-    margin-bottom: -138px;
+    width: 100%;
     border-radius: 10px;
 }
 
