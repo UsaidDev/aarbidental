@@ -416,7 +416,7 @@ h1 {
 }
 
 .about .content-left {
-    background: url(../img/Clinic/Staff.jpg) center no-repeat;
+    background: url(../img/Clinic/Aarbi_clinic-6.jpg) center no-repeat;
     background-size: cover;
     text-align: right;
     border-radius: 10px;
@@ -520,46 +520,25 @@ h1 {
 }
 
 /* ------------------------------
-  testimonial
+  Yellow Zone
 ---------------------------------*/
-
-.testimonial {
-    padding-top: 120px;
-    padding-bottom: 100px;
-    background: #f5f8f9;
+.yellow-zone-section {
+    padding: 20px 0;
+    margin-top: 100px;
 }
 
-.testimonial .content .entry2 {
-    margin-left: 30px;
+.yellow-zone-row {
+    margin-bottom: 10px !important;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.testimonial .content .entry {
-    border-radius: 10px;
-    background: #fff;
-    padding: 20px;
-    padding-bottom: 0;
-    margin-bottom: 30px;
-    box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+.yellow-zone-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.testimonial .content .entry .image {
-    float: left;
-    margin-right: 20px;
-}
-
-.testimonial .content .entry .image img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.testimonial .content .entry .text {
-    overflow: hidden;
-}
-
-.testimonial .content .entry .text p {
-    line-height: 26px;
-}
 
 /* ------------------------------
   contact
