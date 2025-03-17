@@ -253,8 +253,86 @@ span.span-title-left {
 
 .intro .content-right img {
     position: relative;
-    top: -22px;
-    left: -50px;
+    top: 37px; /* Moves the image 22px upwards */
+    left: -50px; /* Moves the image 50px left */
+}
+.image-container img {
+    width: auto; /* Default width */
+    max-width: 100%; /* Prevents image from exceeding its container */
+    height: auto;
+}
+
+@media (min-width: 1200px) { 
+    /* Apply styles for full-screen mode (large screens) */
+    .image-container img {
+        width: 100%; /* Expands to full width */
+    }
+}
+
+/* Floating Bubbles Background */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(173, 216, 230, 0.5); /* Light Blue */
+    border-radius: 50%;
+    animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Static Text Styling */
+.text-container {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.span-title {
+    font-size: 1.2rem;
+    color: #555;
+}
+.brand-aarbi, .brand-dental {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand-aarbi {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-dental {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1024px) { /* Applies only on desktop screens */
+    .text-container h1 {
+        font-size: 48px; /* Increase the font size */
+    }
 }
 
 .intro .content-left img {
@@ -267,7 +345,23 @@ span.span-title-left {
 .intro img {
     border-radius: 10px;
 }
+.uniform-img {
+    width: 400px;  /* Set uniform width */
+    height: 400px; /* Set uniform height */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    border-radius: 10px; /* Optional: Rounded corners */
+    display: block; /* Prevent unwanted spacing */
+}
 
+/* Ensure no unwanted margins or padding */
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.col-md-6 {
+    padding: 0 !important;
+}
 /* ------------------------------
  	features
 ---------------------------------*/
@@ -844,7 +938,7 @@ footer ul li i:hover {
     }
     .intro .content-left img {
         right: 0;
-        top: 25px;
+        top: 40px;
     }
     .intro .content-right img {
         left: 0;

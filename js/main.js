@@ -60,3 +60,18 @@
     });
 
 })();
+document.addEventListener("DOMContentLoaded", function () {
+    function createParticle() {
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.animationDuration = Math.random() * 8 + 5 + "s";
+        document.getElementById("particles").appendChild(particle);
+
+        setTimeout(() => {
+            particle.remove();
+        }, 10000);
+    }
+
+    setInterval(createParticle, 500);
+});
