@@ -1,0 +1,997 @@
+/*
+Items Name : Dentare
+Author : Ngetemplates
+-------------------------------- */
+
+/* ------------------------------
+  Import Google Web Font
+---------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ------------------------------
+  General
+---------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #686868;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    color: #2a2a2a;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 600;
+    position: relative;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+a:hover {
+    color: #06a3db;
+}
+
+p {
+    margin: 5px 0 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+span.span-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    display: block;
+    color: #06a3db;
+    display: flex;
+    justify-content: center;
+}
+
+span.span-title-left {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    display: block;
+    color: #06a3db;
+}
+
+/* ------------------------------
+  preloader
+---------------------------------*/
+
+.spinner5 .cube1,
+.spinner5 .cube2 {
+    background-color: #06a3db;
+}
+
+/* ------------------------------
+  button
+---------------------------------*/
+
+.button {
+    padding: 12px 20px;
+    background: #06a3db;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    border: 0;
+    transition: 0.2s;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    background: #2a2a2a;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* ------------------------------
+  navbar
+---------------------------------*/
+
+.navbar {
+    top: 0;
+    background: #06a3db;
+    padding: 25px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+}
+
+.navbar-brand {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.navbar-brand:hover {
+    text-decoration: none !important;
+}
+
+.navbar .navbar-toggler {
+    padding: 0;
+}
+
+.navbar .navbar-toggler i {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-collapse {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    left: -10px;
+}
+
+.navbar .navbar-nav {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar .navbar-nav li {
+    padding: 0 4px;
+}
+
+.navbar .navbar-nav li a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+.navbar .button-navbar {
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+
+.navbar .button-navbar li {
+    display: inline-block;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .button-navbar li i {
+    color: #06a3db;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+    border: 7px solid #eee;
+    margin-right: 10px;
+}
+
+.navbar-fixed {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0);
+}
+
+/* ------------------------------
+  intro
+---------------------------------*/
+
+.intro {
+    color: #eee;
+    background: #06a3db;
+    padding: 200px 0 160px;
+    text-align: center;
+}
+
+.intro .span-title {
+    color: #fff;
+}
+
+.intro h1 {
+    color: #fff;
+    padding: 0 130px;
+    z-index: 1;
+}
+
+.intro .content-right img {
+    position: relative;
+    top: 37px; /* Moves the image 22px upwards */
+    left: -50px; /* Moves the image 50px left */
+}
+.image-container img {
+    width: auto; /* Default width */
+    max-width: 100%; /* Prevents image from exceeding its container */
+    height: auto;
+}
+
+@media (min-width: 1200px) { 
+    /* Apply styles for full-screen mode (large screens) */
+    .image-container img {
+        width: 100%; /* Expands to full width */
+    }
+}
+
+/* Floating Bubbles Background */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(173, 216, 230, 0.5); /* Light Blue */
+    border-radius: 50%;
+    animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Static Text Styling */
+.text-container {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.span-title {
+    font-size: 1.2rem;
+    color: #555;
+}
+.brand-aarbi, .brand-dental {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brand-aarbi {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-dental {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1024px) { /* Applies only on desktop screens */
+    .text-container h1 {
+        font-size: 48px; /* Increase the font size */
+    }
+}
+
+.intro .content-left img {
+    position: relative;
+    right: -50px;
+    z-index: 2;
+    top: 40px;
+}
+
+.intro img {
+    border-radius: 10px;
+}
+.uniform-img {
+    width: 100%; /* Ensures image scales with the container */
+    max-width: 400px; /* Limits the image size on larger screens */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Keeps aspect ratio while filling container */
+    border-radius: 10px; /* Optional: Rounded corners */
+    display: block; /* Prevents extra spacing issues */
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 576px) {  
+    .uniform-img {
+        max-width: 300px; /* Reduce image size for small devices */
+    }
+}
+
+@media (max-width: 400px) {  
+    .uniform-img {
+        max-width: 100%; /* Full width for very small screens */
+    }
+}
+
+/* Ensure no unwanted margins or padding */
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.col-md-6 {
+    padding: 0 !important;
+}
+/* ------------------------------
+ 	features
+---------------------------------*/
+
+.features {
+    padding-top: 120px;
+}
+
+.features .container {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+}
+
+.features .content {
+    position: relative;
+}
+
+.features .content .icon {
+    float: left;
+}
+
+.features .content .icon i {
+    height: 50px;
+    width: 50px;
+    background: #06a3db;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.features .content .text {
+    overflow: hidden;
+}
+
+.features .content .text h6 {
+    margin-top: 5px;
+}
+
+/* ------------------------------
+  about
+---------------------------------*/
+
+.about {
+    padding-top: 130px;
+}
+
+
+
+.about .content-left img {
+    width: 100%; /* Make sure it adapts to the container */
+    max-width: 400px; /* Prevents excessive stretching on large screens */
+    border-radius: 10px;
+    display: block;
+    height: auto; /* Maintains aspect ratio */
+    margin: auto; /* Centers the image */
+}
+
+/* Make image fully responsive on small screens */
+@media (max-width: 768px) {  
+    .about .content-left img {
+        max-width: 100%; /* Allow the image to take full width on small screens */
+    }
+}
+
+
+
+.about .content-left .open {
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    padding: 27px;
+    bottom: -66px;
+    box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+    margin-left: 45%;
+    transform: translate(-50%);
+    padding-top: 0;
+}
+
+.about .content-left .open i {
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    background: #06a3db;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 50%;
+    position: relative;
+    top: -19px;
+}
+
+.about .content {
+    padding-left: 50px;
+}
+
+.about .content-icon {
+    position: relative;
+}
+
+.about .content-icon .icon {
+    float: left;
+}
+
+.about .content-icon .icon i {
+    height: 50px;
+    width: 50px;
+    background: #06a3db;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.about .content-icon .text {
+    overflow: hidden;
+}
+
+.about .row .row {
+    margin-top: 50px;
+}
+
+/* ------------------------------
+  services
+---------------------------------*/
+
+.services {
+    padding-top: 190px;
+    padding-bottom: 140px;
+}
+
+.services .content {
+    box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.services .content p {
+    line-height: 24px;
+}
+
+.services .content img {
+    height: 65px;
+    width: auto;
+    margin-bottom: 25px;
+}
+
+.services .content h5 {
+    margin-bottom: 25px;
+}
+
+/* ------------------------------
+  Yellow Zone
+---------------------------------*/
+.yellow-zone-section {
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+.yellow-zone-row {
+    margin-bottom: 10px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yellow-zone-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ------------------------------
+  contact
+---------------------------------*/
+
+.contact {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    clear: both;
+}
+
+.contact iframe {
+    width: 100%;
+    box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact h5 {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.contact .content {
+    position: relative;
+    background: #f5f8f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact .content .icon {
+    float: left;
+}
+
+.contact .content .icon i {
+    background: #06a3db;
+    font-size: 25px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 22px;
+    border-radius: 10px;
+}
+
+.contact .content .text {
+    overflow: hidden;
+}
+
+.contact .content .text span {
+    position: relative;
+    top: -10px;
+}
+
+.contact .content-clock {
+    background: #06a3db;
+}
+
+.contact .content-clock .icon i {
+    color: #06a3db;
+    background: #fff;
+}
+
+.contact .content-clock h5 {
+    color: #fff;
+}
+
+.contact .content-clock span {
+    color: #eee;
+}
+
+/* ------------------------------
+  footer
+---------------------------------*/
+
+footer {
+    text-align: right;
+}
+
+footer .row {
+    padding: 10px 0 30px 0;
+}
+
+footer ul {
+    text-align: left;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer ul li i:hover {
+    color: #06a3db;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    width: 60px;
+  }
+  /* WhatsApp icon styling */
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  /* Message box styling – initially hidden and positioned above the icon */
+  .message-box {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background: #25D366;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: messageBoxSlide 0.5s forwards 1.5s;
+  }
+  /* Closing animation for the message box */
+  .message-box.closing {
+    animation: messageBoxClose 0.5s forwards;
+  }
+  /* Keyframes for sliding in the message box */
+  @keyframes messageBoxSlide {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Keyframes for closing (slide down and fade out) */
+  @keyframes messageBoxClose {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+  /* Chat message styling – messages fade in one by one */
+  .chat-message {
+    opacity: 0;
+    animation: chatFadeIn 0.5s forwards;
+    margin: 5px 0;
+  }
+  .chat-message:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .chat-message:nth-child(3) {
+    animation-delay: 2.5s;
+  }
+  @keyframes chatFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* Hand icon styling – initially hidden and positioned off to the side */
+  .hand-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    right: 60px;
+    opacity: 0;
+    animation: handMove 1s forwards 1s;
+  }
+  @keyframes handMove {
+    0% {
+      transform: translate(0, 50px);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  /* Close button styling inside the message box */
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    outline: none;
+  }
+/* Left side text container */
+.ourteam {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  /* Left content */
+  .ourteam .content {
+    flex: 1;
+    min-width: 280px;
+    padding-right: 20px;
+  }
+  
+  .ourteam .content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .ourteam .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Right side image container */
+  .ourteam .team-photo {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ourteam .team-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .ourteam {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .ourteam .content {
+      padding-right: 0;
+    }
+  }
+   /* Keyframes for animations */
+   @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes flipIn {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0deg); opacity: 1; }
+  }
+  /* Animation classes */
+  .animate-fadeIn {
+    animation: fadeIn 1s forwards;
+  }
+  .animate-slideUp {
+    animation: slideUp 1s forwards;
+  }
+  .animate-zoomIn {
+    animation: zoomIn 1s forwards;
+  }
+  .animate-flipIn {
+    animation: flipIn 1s forwards;
+  }
+  /* Ensure elements start invisible */
+  [data-animate] {
+    opacity: 0;
+  }
+
+  
+/* ------------------------------
+  responsive
+---------------------------------*/
+
+@media (max-width: 1199px) {
+    .navbar .button-navbar {
+        width: 25%;
+        float: left;
+        text-align: left;
+    }
+    .navbar .button-navbar li i {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .button-navbar {
+        display: none;
+    }
+    .intro h1 {
+        padding: 0;
+    }
+    .intro .content-left img {
+        right: -30px;
+    }
+    .intro .content-right img {
+        left: -30px;
+    }
+    .features .container {
+        padding: 0;
+    }
+    .about .col-md-5 {
+        flex: 100%;
+    }
+    .about .col-md-7 {
+        flex: 100%;
+    }
+    .about h2 {
+        margin-top: 30px;
+    }
+    .about .content-left {
+        margin-right: 50px;
+    }
+    .about .content-left .open {
+        bottom: -50px;
+    }
+    .about .content {
+        margin-top: 100px;
+        padding-left: 0;
+    }
+    .services {
+        padding-top: 120px;
+    }
+    .services .col-md-4 {
+        flex: 50%;
+    }
+    .contact .col-md-3 {
+        flex: 50%;
+    }
+    .contact .col-md-6 {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        padding-bottom: 170px;
+    }
+    .intro .content-left img {
+        right: 0;
+        top: 40px;
+    }
+    .intro .content-right img {
+        left: 0;
+        top: 50px;
+    }
+    .features .content {
+        margin-bottom: 25px;
+    }
+    .features .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 0 25px;
+    }
+    .navbar .navbar-brand img {
+        height: 32px;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 53px;
+    }
+    .about .col {
+        flex: 100%;
+    }
+    .features .content {
+        box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+        padding: 25px;
+    }
+    .contact .col-md-6 {
+        flex: 100%;
+    }
+    .contact .col-md-3 {
+        width: 100%;
+    }
+    .contact .col-md-4 {
+        display: none;
+    }
+    .contact .col-md-5 {
+        display: none;
+    }
+    .testimonial .content .entry2 {
+        margin-left: 0;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ul {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+}
